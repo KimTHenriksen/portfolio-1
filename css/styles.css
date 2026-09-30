@@ -1,0 +1,21 @@
+:root {
+  --color-background: #f8f4f4;
+  --color-white: #ffffff;
+  --color-rose: #d9b8b6;
+  --color-light-rose: #eee2e1;
+  --color-text: #292929;
+  --color-text-light: #626262;
+  --color-border: #ded8d6;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: "Manrope", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Cormorant Garmond", serif;
+}
