@@ -23,3 +23,37 @@ introText.classList.add("intro-text");
 
 introSection.append(profileImage, introHeader, introTitle, introText);
 portfolioContent.append(introSection);
+
+/* Projects */
+const projectSection = document.createElement("section");
+projectSection.classList.add("projects");
+
+const projectHeader = document.createElement("h2");
+projectHeader.textContent = "Projects";
+projectHeader.classList.add("project-header");
+
+const projectCards = document.createElement("div");
+projectCards.classList.add("project-cards");
+
+const projects = [
+  {
+    title: "Square Eyes",
+    image: "./images/squareeyes.jpg",
+    alt: "Square Eyes website",
+    description:
+      "Square Eyes is a website where you can stream different movies, and buy them from independent filmmakers.",
+    github: "https://github.com/KimTHenriksen/square-eyes",
+    website: "https://kimthenriksen.github.io/square-eyes/",
+  },
+  {
+    title: "JavaScript 1",
+    image: "./images/javascript1.jpg",
+    alt: "JavaScript 1 website",
+    description:
+      "A movie website built with HTML, CSS and JavaScript, using an API to display movies, search for movies and add them to a shopping cart.",
+    github: "https://github.com/KimTHenriksen/JS1",
+    website: "https://kimthenriksen.github.io/JS1/",
+  },
+];
+
+projectSection.append(projectHeader);
