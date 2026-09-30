@@ -41,7 +41,7 @@ const projects = [
     image: "./images/squareeyes.jpg",
     alt: "Square Eyes website",
     description:
-      "Square Eyes is a website where you can stream different movies, and buy them from independent filmmakers.",
+      "Square Eyes is a movie website built with HTML and CSS, where you can explore movie categories, view product page and navigate the site.",
     github: "https://github.com/KimTHenriksen/square-eyes",
     website: "https://kimthenriksen.github.io/square-eyes/",
   },
@@ -53,6 +53,15 @@ const projects = [
       "A movie website built with HTML, CSS and JavaScript, using an API to display movies, search for movies and add them to a shopping cart.",
     github: "https://github.com/KimTHenriksen/JS1",
     website: "https://kimthenriksen.github.io/JS1/",
+  },
+  {
+    title: "Semeste Project 1",
+    image: "./images/semesterproject1.png",
+    alt: "Semester Project 1 website",
+    description:
+      "Semester Project 1 is a science musem website built with HTML and CSS, with information and activities for children, families, schools and other visitors. ",
+    github: "https://github.com/KimTHenriksen/SP1",
+    website: "https://kimthenriksen.github.io/SP1/",
   },
 ];
 
