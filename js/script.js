@@ -114,3 +114,34 @@ projects.forEach((project) => {
 
 projectSection.append(projectHeader, projectCards);
 portfolioContent.append(projectSection);
+
+/* Contact */
+const contactSection = document.createElement("section");
+contactSection.classList.add("contact");
+contactSection.id = "contact";
+
+const conctactHeader = document.createElement("h2");
+conctactHeader.textContent = "Contact";
+
+const contactText = document.createElement("p");
+contactText.textContent =
+  "Here you can find my contact information, CV and cover letter.";
+contactText.classList.add("contact-text");
+
+const linkCV = document.createElement("a");
+linkCV.href = "./documents/cv.pdf";
+linkCV.textContent = "View CV";
+linkCV.target = "_blank";
+linkCV.rel = "noopener noreferrer";
+linkCV.classList.add("conctact-link");
+
+const linkCoverLetter = document.createElement("a");
+linkCoverLetter.href = "./documents/cover_letter.pdf";
+linkCoverLetter.textContent = "View Cover Letter";
+linkCoverLetter.target = "_blank";
+linkCoverLetter.rel = "noopener noreferrer";
+linkCoverLetter.classList.add("conctact-link");
+
+contactSection.append(conctactHeader, contactText, linkCV, linkCoverLetter);
+
+portfolioContent.append(contactSection);
