@@ -55,7 +55,7 @@ const projects = [
     website: "https://kimthenriksen.github.io/JS1/",
   },
   {
-    title: "Semeste Project 1",
+    title: "Semester Project 1",
     image: "./images/semesterproject1.png",
     alt: "Semester Project 1 website",
     description:
