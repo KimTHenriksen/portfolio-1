@@ -3,6 +3,8 @@ const portfolioContent = document.querySelector("#portfolio-content");
 /* Intro */
 const introSection = document.createElement("section");
 introSection.classList.add("intro");
+introSection.id = "home";
+introSection.classList.add("intro");
 
 const introHeader = document.createElement("h1");
 introHeader.textContent = "Kim Teresia Henriksen";
@@ -26,6 +28,8 @@ portfolioContent.append(introSection);
 
 /* Projects */
 const projectSection = document.createElement("section");
+projectSection.classList.add("projects");
+projectSection.id = "projects";
 projectSection.classList.add("projects");
 
 const projectHeader = document.createElement("h2");
@@ -86,11 +90,15 @@ projects.forEach((project) => {
   const linkGithub = document.createElement("a");
   linkGithub.href = project.github;
   linkGithub.textContent = "GitHub";
+  linkGithub.target = "blank";
+  linkGithub.rel = "noopener noreferrer";
   linkGithub.classList.add("project-link");
 
   const linkWebsite = document.createElement("a");
   linkWebsite.href = project.website;
   linkWebsite.textContent = "View website";
+  linkWebsite.target = "blank";
+  linkWebsite.rel = "noopener noreferrer";
   linkWebsite.classList.add("project-link");
 
   projectCard.append(
