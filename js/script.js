@@ -45,7 +45,7 @@ const projects = [
     image: "./images/squareeyes.jpg",
     alt: "Square Eyes website",
     description:
-      "Square Eyes is a movie website built with HTML and CSS, where you can explore movie categories, view product page and navigate the site.",
+      "A movie website built with HTML and CSS, where you can explore movie categories, product pages and navigate the site.",
     github: "https://github.com/KimTHenriksen/square-eyes",
     website: "https://kimthenriksen.github.io/square-eyes/",
   },
@@ -54,7 +54,7 @@ const projects = [
     image: "./images/javascript1.jpg",
     alt: "JavaScript 1 website",
     description:
-      "A movie website built with HTML, CSS and JavaScript, using an API to display movies, search for movies and add them to a shopping cart.",
+      "A movie website built with HTML, CSS and JavaScript, using an API to display movies, search and add to cart.",
     github: "https://github.com/KimTHenriksen/JS1",
     website: "https://kimthenriksen.github.io/JS1/",
   },
@@ -63,7 +63,7 @@ const projects = [
     image: "./images/semesterproject1.png",
     alt: "Semester Project 1 website",
     description:
-      "Semester Project 1 is a science museum website built with HTML and CSS, with information and activities for children, families, schools and other visitors. ",
+      "A science museum website built with HTM and CSS, with information and activities for children, families, schools and other visitors. ",
     github: "https://github.com/KimTHenriksen/SP1",
     website: "https://kimthenriksen.github.io/SP1/",
   },
@@ -133,14 +133,14 @@ linkCV.href = "./documents/cv.pdf";
 linkCV.textContent = "View CV";
 linkCV.target = "_blank";
 linkCV.rel = "noopener noreferrer";
-linkCV.classList.add("conctact-link");
+linkCV.classList.add("contact-link");
 
 const linkCoverLetter = document.createElement("a");
 linkCoverLetter.href = "./documents/cover_letter.pdf";
 linkCoverLetter.textContent = "View Cover Letter";
 linkCoverLetter.target = "_blank";
 linkCoverLetter.rel = "noopener noreferrer";
-linkCoverLetter.classList.add("conctact-link");
+linkCoverLetter.classList.add("contact-link");
 
 contactSection.append(conctactHeader, contactText, linkCV, linkCoverLetter);
 

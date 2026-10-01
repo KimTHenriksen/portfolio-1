@@ -135,3 +135,27 @@ nav a:hover {
     height: auto;
   }
 }
+
+/* Contact */
+.contact {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: var(--color-white);
+}
+
+.contact-text {
+  margin-bottom: 30px;
+}
+
+.contact-link {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 5px 0;
+  color: var(--color-text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-rose);
+}
+
+.contact-link:hover {
+  background-color: var(--color-rose);
+}
