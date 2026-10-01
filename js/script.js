@@ -59,10 +59,50 @@ const projects = [
     image: "./images/semesterproject1.png",
     alt: "Semester Project 1 website",
     description:
-      "Semester Project 1 is a science musem website built with HTML and CSS, with information and activities for children, families, schools and other visitors. ",
+      "Semester Project 1 is a science museum website built with HTML and CSS, with information and activities for children, families, schools and other visitors. ",
     github: "https://github.com/KimTHenriksen/SP1",
     website: "https://kimthenriksen.github.io/SP1/",
   },
 ];
 
-projectSection.append(projectHeader);
+/* Create project cards */
+projects.forEach((project) => {
+  const projectCard = document.createElement("article");
+  projectCard.classList.add("project-card");
+
+  const cardImage = document.createElement("img");
+  cardImage.src = project.image;
+  cardImage.alt = project.alt;
+  cardImage.classList.add("card-image");
+
+  const cardTitle = document.createElement("h3");
+  cardTitle.textContent = project.title;
+  cardTitle.classList.add("card-title");
+
+  const cardDescription = document.createElement("p");
+  cardDescription.textContent = project.description;
+  cardDescription.classList.add("card-description");
+
+  const linkGithub = document.createElement("a");
+  linkGithub.href = project.github;
+  linkGithub.textContent = "GitHub";
+  linkGithub.classList.add("project-link");
+
+  const linkWebsite = document.createElement("a");
+  linkWebsite.href = project.website;
+  linkWebsite.textContent = "View website";
+  linkWebsite.classList.add("project-link");
+
+  projectCard.append(
+    cardImage,
+    cardTitle,
+    cardDescription,
+    linkGithub,
+    linkWebsite,
+  );
+
+  projectCards.append(projectCard);
+});
+
+projectSection.append(projectHeader, projectCards);
+portfolioContent.append(projectSection);
