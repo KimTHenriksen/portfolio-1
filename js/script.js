@@ -63,7 +63,7 @@ const projects = [
     image: "./images/semesterproject1.png",
     alt: "Semester Project 1 website",
     description:
-      "A science museum website built with HTM and CSS, with information and activities for children, families, schools and other visitors. ",
+      "A science museum website built with HTML and CSS, with information and activities for children, families, schools and other visitors. ",
     github: "https://github.com/KimTHenriksen/SP1",
     website: "https://kimthenriksen.github.io/SP1/",
   },
@@ -90,14 +90,14 @@ projects.forEach((project) => {
   const linkGithub = document.createElement("a");
   linkGithub.href = project.github;
   linkGithub.textContent = "GitHub";
-  linkGithub.target = "blank";
+  linkGithub.target = "_blank";
   linkGithub.rel = "noopener noreferrer";
   linkGithub.classList.add("project-link");
 
   const linkWebsite = document.createElement("a");
   linkWebsite.href = project.website;
   linkWebsite.textContent = "View website";
-  linkWebsite.target = "blank";
+  linkWebsite.target = "_blank";
   linkWebsite.rel = "noopener noreferrer";
   linkWebsite.classList.add("project-link");
 
@@ -120,13 +120,38 @@ const contactSection = document.createElement("section");
 contactSection.classList.add("contact");
 contactSection.id = "contact";
 
-const conctactHeader = document.createElement("h2");
-conctactHeader.textContent = "Contact";
+const contactHeader = document.createElement("h2");
+contactHeader.textContent = "Contact";
 
 const contactText = document.createElement("p");
 contactText.textContent =
   "Here you can find my contact information, CV and cover letter.";
 contactText.classList.add("contact-text");
+
+/* Profile links */
+const profileLinks = document.createElement("div");
+profileLinks.classList.add("contact-links");
+
+const githubLink = document.createElement("a");
+githubLink.href = "https://github.com/KimTHenriksen";
+githubLink.textContent = "GitHub";
+githubLink.target = "_blank";
+githubLink.rel = "noopener noreferrer";
+githubLink.classList.add("contact-link");
+
+const linkedinLink = document.createElement("a");
+linkedinLink.href =
+  "https://www.linkedin.com/in/kim-teresia-henriksen-5a9bb6333/";
+linkedinLink.textContent = "LinkedIn";
+linkedinLink.target = "_blank";
+linkedinLink.rel = "noopener noreferrer";
+linkedinLink.classList.add("contact-link");
+
+profileLinks.append(githubLink, linkedinLink);
+
+/* Document links */
+const documentLinks = document.createElement("div");
+documentLinks.classList.add("contact-links");
 
 const linkCV = document.createElement("a");
 linkCV.href = "./documents/cv.pdf";
@@ -142,6 +167,8 @@ linkCoverLetter.target = "_blank";
 linkCoverLetter.rel = "noopener noreferrer";
 linkCoverLetter.classList.add("contact-link");
 
-contactSection.append(conctactHeader, contactText, linkCV, linkCoverLetter);
+documentLinks.append(linkCV, linkCoverLetter);
+
+contactSection.append(contactHeader, contactText, profileLinks, documentLinks);
 
 portfolioContent.append(contactSection);
