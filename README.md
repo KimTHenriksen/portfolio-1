@@ -1,2 +1,2 @@
 # portfolio-1
-Personal portfolio
+Personal portfolio. Built with HTML, CSS and JavaScript.
