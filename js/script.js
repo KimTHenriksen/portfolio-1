@@ -4,7 +4,6 @@ const portfolioContent = document.querySelector("#portfolio-content");
 const introSection = document.createElement("section");
 introSection.classList.add("intro");
 introSection.id = "home";
-introSection.classList.add("intro");
 
 const introHeader = document.createElement("h1");
 introHeader.textContent = "Kim Teresia Henriksen";
@@ -15,7 +14,7 @@ introTitle.classList.add("intro-title");
 
 const profileImage = document.createElement("img");
 profileImage.src = "./images/profilepict.jpg";
-profileImage.alt = "Kim Teresia Henriksen";
+profileImage.alt = "Potrait of Kim Teresia Henriksen";
 profileImage.classList.add("profile-image");
 
 const introText = document.createElement("p");
@@ -30,7 +29,6 @@ portfolioContent.append(introSection);
 const projectSection = document.createElement("section");
 projectSection.classList.add("projects");
 projectSection.id = "projects";
-projectSection.classList.add("projects");
 
 const projectHeader = document.createElement("h2");
 projectHeader.textContent = "Projects";
